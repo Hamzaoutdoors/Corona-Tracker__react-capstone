@@ -1,3 +1,75 @@
+
+<p align="center">
+  <a href="https://www.microverse.org/">
+    <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors/Corona-Tracker__react-capstone/LICENSE">
+    <img alt="MIT Licensed" src="https://img.shields.io/github/license/Hamzaoutdoors/to-do-list?style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors/Corona-Tracker__react-capstone">
+    <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Hamzaoutdoors/Corona-Tracker__react-capstone/dev?color=blue&style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors/Corona-Tracker__react-capstone">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Hamzaoutdoors/Corona-Tracker__react-capstone?color=green&label=%E2%98%85%20stars%20&style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/Hamzaoutdoors?color=yellow&logo=github&style=flat-square">
+  </a>
+</p>
+
+<div align="center">
+ <img alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&loColor=%2361DAFB"> <img alt="redux" src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"/></div>
+</br>
+ <div align="center">
+  <em align="center" style>“Everyday life is like programming, I guess. If you love something you can put beauty into it.”</em><strong> - Lao Tzu</strong>
+  </div>
+
+# Corona Tracker
+
+- A SPA web application for a to check a list of metrics (COVID-19 numeric data) using of React and Redux.
+The webapp will have several pages :
+
+  - One page with a list of metrics that can be filtered by the country. This page is designed to be the homepage.
+  - One page for the detail page for Czech Republic cities with number of infected.
+- For this project we interacted with [Narrativa API](https://covid19tracking.narrativa.com/index_en.html)
+
+## More about the project :
+
+Because COVID-19 virus affects all of us. Today it's someone else who is getting infected; tomorrow it could be us. We need to prevent the spread of this virus. We need to build app so that people can track and follow COVID-19 virus spread and make decision.
+
+</br>
+<p align="center">
+   <kbd>
+    <img alt="logo" src="./assets/covid19-logo.gif" width="250" height="250">
+   </kbd>
+</p>
+
+</br>
+
+<!--  <div align="center">
+<kbd>
+  <img alt="math" src="./src\media\screenShot.PNG">
+  </kbd>
+  </div>
+ </br>
+ -->
+## Built With
+
+- JSX, JavaScript with ES6
+- React.js with Redux
+- Linters, Node.js, Git, Flexbox
+- React-Bootstrap
+
+## Live demo
+
+### In construction
+<!-- Live demos for this project can be found on the following Cloud Platforms :
+
+
+<div align="center">
+    <a href="https://bookstore-hamzaoutdoors.netlify.app/" width = "20%"><img alt="Netlify deployement" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></a>
+ </div> -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +111,34 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Ellaouzi Hamza**
 
-### Code Splitting
+- GitHub: [hamzaoutdoors](https://github.com/Hamzaoutdoors)
+- LinkedIn : [Hamza Ellaouzi](https://www.linkedin.com/in/hamza-ellaouzi-137a45b8/)
+- Twitter: [Hamza Ellaouzi](https://twitter.com/EllaouziHamza)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to check the [issues page](https://github.com/Hamzaoutdoors/Corona-Tracker__react-capstone/issues).
 
-### Making a Progressive Web App
+# Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Give a ⭐️ if you like this project!
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Hat tip to anyone whose code was used 🔰
+- Inspiration 💘
+- Microverse program ⚡
+- Our standup team 🏹
+- Our family's support 🙌
+- 📝 License
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.

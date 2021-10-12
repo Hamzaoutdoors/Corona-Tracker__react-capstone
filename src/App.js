@@ -19,15 +19,9 @@ const App = () => {
     <Router>
       <main className="App-container">
         <Switch>
-          <Route path="/" exact>
-            <CountriesList />
-          </Route>
-          <Route path="/">
-            <RegionsList />
-          </Route>
-          {/* <Route path="/profile">
-            <Profile />
-          </Route> */}
+          <Route path="/" exact component={CountriesList} />
+          <Route path="/country/:id" component={RegionsList} />
+          <Route path="*" component={Error} />
         </Switch>
       </main>
     </Router>

@@ -1,7 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 body {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App-container {
+  margin: 0 auto;
+  padding-top: 15px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.95);
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --header-color: #ffa500;
+  --bg-color: #d18700;
+  --primary-color: #e3ae09;
+  --secondary-color: #a36a00;
+  --dark-color: #754c00;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(26%) sepia(64%) saturate(556%) hue-rotate(7deg) brightness(91%) contrast(99%);
+}
+
+/* Main Page */
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 11rem;
+  background-color: var(--header-color);
+  box-shadow: -1px 1px 12px -1px rgba(0, 0, 0, 0.71);
+}
+
+.page-header .header-image {
+  flex: 50%;
+}
+
+.page-header .header-body {
+  flex: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.page-header .header-body h2,
+.countries-container .country-body h2 {
+  font-weight: 700;
+}
+
+.page-header .header-body > *,
+.countries-container .country-body > * {
+  margin: 0;
+}
+
+.middle-title {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+/* Countries list */
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: -1px 1px 12px -1px rgba(0, 0, 0, 0.71);
+}
+
+.div {
+  width: 100%;
+  position: relative;
+}
+
+.countries-container > div {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+
+.country-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 0.7rem 1rem 0.4rem;
+}
+
+.div-1,
+.div-4 {
+  background-color: var(--primary-color);
+}
+
+.div-2,
+.div-3 {
+  background-color: var(--secondary-color);
 }

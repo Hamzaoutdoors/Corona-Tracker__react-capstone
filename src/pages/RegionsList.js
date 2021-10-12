@@ -2,7 +2,7 @@ import React from 'react';
 
 const RegionsList = () => (
   <div>
-    <h1>Hey</h1>
+    <h1>Under Construction</h1>
   </div>
 );
 

@@ -1,15 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Header = () => (
+const Header = ({ title, total, carteName }) => (
   <div className="page-header">
     <div className="header-image">
-      <img src="./cartes/europe-carte.svg" alt="europe" />
+      <img src={`./cartes/${carteName}.svg`} alt="cart" />
     </div>
     <div className="header-body">
-      <h2>EUROPE</h2>
-      <p>9.999 Cases</p>
+      <h2>{title}</h2>
+      <p>
+        {total}
+        {' '}
+        Cases
+      </p>
     </div>
   </div>
 );
 
 export default Header;
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+  total: PropTypes.number.isRequired,
+  carteName: PropTypes.string.isRequired,
+};

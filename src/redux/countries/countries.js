@@ -23,7 +23,7 @@ export const fetchCountriesAction = () => (dispatch) => {
 const countiresReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_COUNTRIES:
-      return [...state, ...action.countries];
+      return [...action.countries];
     default:
       return state;
   }

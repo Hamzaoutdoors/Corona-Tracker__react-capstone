@@ -2,10 +2,10 @@ import React from 'react';
 import { shallowEqual, useSelector } from 'react-redux';
 import Country from './Country';
 import Header from './Header';
+// import Loading from './Loading';
 
 const Countries = () => {
   const countries = useSelector((state) => state.countries, shallowEqual);
-
   const total = countries.reduce((acc, curr) => acc + curr.todayNewConfirmed, 0);
 
   const countriesMoreAffected = countries.sort((a, b) => b.todayNewConfirmed - a.todayNewConfirmed);
@@ -32,6 +32,7 @@ const Countries = () => {
       {' '}
       <Header total={total} title="EUROPE" carteName="europe" />
       <h3 className="middle-title">Today New Confirmed by Country</h3>
+      {/* {countries ? <Loading /> : <div />} */}
       <div className="countries-container">
         {countriesList}
       </div>

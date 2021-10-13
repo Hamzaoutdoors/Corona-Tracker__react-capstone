@@ -35,6 +35,14 @@ img {
   filter: invert(26%) sepia(64%) saturate(556%) hue-rotate(7deg) brightness(91%) contrast(99%);
 }
 
+.bgPrimary {
+  background-color: var(--primary-color);
+}
+
+.bgSecondary {
+  background-color: var(--secondary-color);
+}
+
 /* Main Page */
 
 .page-header {
@@ -119,22 +127,35 @@ img {
   margin: 0.5rem;
 }
 
-.country-body > p {
+.country-body > p,
+.region-body > p {
   font-size: 0.8rem;
   position: relative;
   color: white;
   line-height: 1.4;
 }
 
-.country-body > p::after {
+.country-body > p::after,
+.region-body > p::after {
   content: attr(data-content);
   position: absolute;
-  color: #000;
+  color: white;
   top: 0;
   left: 0;
   width: 100%;
   height: 60%;
-  background-color: var(--hover-color);
+  background-color: var(--dark-color);
+}
+
+.region-body > p:last-child::after {
+  content: attr(data-content);
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-color: #ff7f7f;
 }
 
 .country-body {
@@ -160,6 +181,39 @@ img {
 }
 
 /* Regions Page */
+.return-icon {
+  margin: 0 0.7rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.regions-container {
+  width: 100%;
+}
+
+.regions-container .region-wrapper {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  height: 6rem;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/* .region-body {
+
+}
+
+.region-body > p {
+
+} */
+
+.region-icon {
+  margin: 0.5rem 0.5rem 0 0.7rem;
+}
 
 /* Loading */
 
@@ -243,4 +297,16 @@ img {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Error */
+
+.error-page {
+  display: flex;
+  justify-content: center;
+}
+
+.error-container {
+  text-align: center;
+  text-transform: capitalize;
 }

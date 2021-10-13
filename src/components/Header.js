@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({ title, total, carteName }) => (
+const Header = ({
+  title, total, carteName,
+}) => (
   <div className="page-header">
     <div className="header-image">
       <img src={`/cartes/${carteName}.svg`} alt="cart" />
@@ -10,8 +12,6 @@ const Header = ({ title, total, carteName }) => (
       <h2>{title}</h2>
       <p>
         {total}
-        {' '}
-        Cases
       </p>
     </div>
   </div>

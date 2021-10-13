@@ -2,8 +2,8 @@ import React from 'react';
 import { shallowEqual, useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import Country from './Country';
-import Header from './Header';
-import Loading from './Loading';
+import Header from '../Header';
+import Loading from '../Loading';
 
 // import Loading from './Loading';
 
@@ -33,7 +33,7 @@ const Countries = () => {
   return (
     <div>
       {' '}
-      <Header total={total} title="EUROPE" carteName="europe" />
+      <Header total={`${total} Cases`} title="EUROPE" carteName="europe" />
       <h3 className="middle-title">Today New Confirmed by Country</h3>
       {countries.length === 0 ? <Loading /> : null}
       <Container className="countries-container">

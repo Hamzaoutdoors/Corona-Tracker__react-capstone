@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import CountriesList from './pages/CountriesList';
 import RegionsList from './pages/RegionsList';
 import { fetchCountriesAction } from './redux/countries/countries';
+import Error from './components/Error';
 
 const App = () => {
   const dispatch = useDispatch();

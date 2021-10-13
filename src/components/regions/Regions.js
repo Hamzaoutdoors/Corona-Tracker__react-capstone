@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Region from './Region';
-import Header from './Header';
-import Loading from './Loading';
-import { fetchCountriesAction } from '../redux/countries/countries';
+import Header from '../Header';
+import Loading from '../Loading';
+import { fetchCountriesAction } from '../../redux/countries/countries';
 
 const Regiones = () => {
   const { id } = useParams();
@@ -20,13 +20,12 @@ const Regiones = () => {
       // Non camelCase are needed here since they're used by the Narrativa API.
       /* eslint-disable camelcase */
       const regionsData = countryObj[0].regions.map(({
-        date, id, name, today_new_confirmed, today_new_deaths,
+        id, name, today_new_confirmed, today_new_deaths,
       }) => ({
-        date,
         id,
         name,
-        todayNewConfirmed: today_new_confirmed,
-        todayNewDeaths: today_new_deaths,
+        todayNewConfirmed: today_new_confirmed || 0,
+        todayNewDeaths: today_new_deaths || 0,
       }));
       setRegions(regionsData);
     } else {
@@ -37,7 +36,7 @@ const Regiones = () => {
   if (!regions) {
     return (
       <>
-        <h2 className="section-title">Wait Data to load</h2>
+        <h2 className="section-title">Loading... </h2>
         <Loading />
       </>
     );
@@ -65,7 +64,7 @@ const Regiones = () => {
   return (
     <div>
       {' '}
-      <Header total={total} title={id.toUpperCase()} carteName={id} />
+      <Header total={`${total} Cases`} title={id.toUpperCase()} carteName={id} />
       <h3 className="middle-title">{`REGIONS BREAKDOWN - ${regions[0].date}`}</h3>
       <div className="regions-container">
         {regionsList}

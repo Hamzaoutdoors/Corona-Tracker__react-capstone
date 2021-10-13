@@ -8,6 +8,8 @@ import { useDispatch } from 'react-redux';
 import CountriesList from './pages/CountriesList';
 import RegionsList from './pages/RegionsList';
 import { fetchCountriesAction } from './redux/countries/countries';
+import Error from './components/Error';
+import Nav from './pages/Nav';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -18,6 +20,7 @@ const App = () => {
   return (
     <Router>
       <main className="App-container">
+        <Nav />
         <Switch>
           <Route path="/" exact component={CountriesList} />
           <Route path="/country/:id" component={RegionsList} />

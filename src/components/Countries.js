@@ -1,11 +1,14 @@
 import React from 'react';
 import { shallowEqual, useSelector } from 'react-redux';
+import { Container } from 'react-bootstrap';
 import Country from './Country';
 import Header from './Header';
+import Loading from './Loading';
+
+// import Loading from './Loading';
 
 const Countries = () => {
-  const countries = useSelector((state) => state.countries, shallowEqual);
-
+  const { countries } = useSelector((state) => state.countries, shallowEqual);
   const total = countries.reduce((acc, curr) => acc + curr.todayNewConfirmed, 0);
 
   const countriesMoreAffected = countries.sort((a, b) => b.todayNewConfirmed - a.todayNewConfirmed);
@@ -28,14 +31,15 @@ const Countries = () => {
   });
 
   return (
-    <>
+    <div>
       {' '}
       <Header total={total} title="EUROPE" carteName="europe" />
       <h3 className="middle-title">Today New Confirmed by Country</h3>
-      <div className="countries-container">
+      {countries.length === 0 ? <Loading /> : null}
+      <Container className="countries-container">
         {countriesList}
-      </div>
-    </>
+      </Container>
+    </div>
   );
 };
 

@@ -17,6 +17,7 @@ body {
   color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.95);
   font-family: 'Lato', sans-serif;
+  position: relative;
 }
 
 :root {
@@ -87,6 +88,17 @@ img {
   margin-left: 1rem;
   padding: 5px 0;
   text-transform: uppercase;
+}
+
+/* Nav bar */
+
+.nav-icons {
+  display: flex;
+  margin-right: 1rem;
+  position: absolute;
+  top: 1.7rem;
+  right: 0;
+  gap: 1rem;
 }
 
 /* Countries list */
@@ -202,14 +214,6 @@ img {
   align-items: center;
   padding: 0.5rem;
 }
-
-/* .region-body {
-
-}
-
-.region-body > p {
-
-} */
 
 .region-icon {
   margin: 0.5rem 0.5rem 0 0.7rem;

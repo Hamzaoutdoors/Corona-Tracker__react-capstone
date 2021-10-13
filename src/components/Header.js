@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Header = ({ title, total, carteName }) => (
   <div className="page-header">
     <div className="header-image">
-      <img src={`./cartes/${carteName}.svg`} alt="cart" />
+      <img src={`/cartes/${carteName}.svg`} alt="cart" />
     </div>
     <div className="header-body">
       <h2>{title}</h2>

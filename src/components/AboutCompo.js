@@ -36,6 +36,10 @@ const AboutComponent = () => (
           <a href="https://www.santepubliquefrance.fr/dossiers/coronavirus-covid-19">Santé publique France</a>
         </li>
       </ul>
+      <p className="text-monospace warning">
+        All Copyright &copy; For
+        <a href="https://covid19tracking.narrativa.com/index_en.html" className="text-decoration-none"> Narrativa API</a>
+      </p>
     </Container>
   </div>
 );

@@ -1,28 +1,29 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Region = ({
-  id, name, todayNewConfirmed, carteName,
+  name,
+  todayNewConfirmed,
+  todayNewDeaths,
+  item,
 }) => {
   const numberFormat = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
   return (
-    <Link
-      to={`/country/${carteName}`}
-      className={`div div-${id} d-flex flex-column`}
-    >
-      <FontAwesomeIcon icon={faArrowCircleRight} className="arrow-icon" />
-      <div className="country-image">
-        <img alt="country-img" src={`./cartes/${carteName}.svg`} />
-      </div>
-      <div className="country-body">
+    <div className={`region-wrapper d-flex ${item % 2 === 0 ? 'bgPrimary' : 'bgSecondary'}`}>
+      <div className="region-name">
         <h2 className="p-0">{name}</h2>
-        <p className="p-0" data-content={`${numberFormat(todayNewConfirmed)} Cases`}>{`${numberFormat(todayNewConfirmed)} Cases`}</p>
       </div>
-    </Link>
+      <div className="d-flex align-items-center text-align-center">
+        <div className="region-body d-flex flex-column align-items-center">
+          <p data-content={`${numberFormat(todayNewConfirmed)} Cases`} className="m-0">{`${numberFormat(todayNewConfirmed)} Cases`}</p>
+          <p data-content={`${numberFormat(todayNewDeaths)} Deaths`} className="m-0">{`${numberFormat(todayNewDeaths)} Deaths`}</p>
+        </div>
+        <FontAwesomeIcon icon={faArrowCircleRight} className="region-icon" />
+      </div>
+    </div>
   );
 };
 

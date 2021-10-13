@@ -9,21 +9,14 @@ import { fetchCountriesAction } from '../redux/countries/countries';
 const Regiones = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const countries = useSelector((state) => state.countries, shallowEqual);
-  console.log(countries);
-  const [loading, setLoading] = useState(false);
+  const { countries, loaded } = useSelector((state) => state.countries, shallowEqual);
+
   const [regions, setRegions] = useState(null);
-
-  // const countryObj = countries.filter((obj) => obj.id === id);
-
-  // const total = regions.reduce((acc, curr) => acc + curr.todayNewConfirmed, 0);
 
   useEffect(() => {
     dispatch(fetchCountriesAction());
-    setLoading(true);
-    if (countries) {
+    if (loaded) {
       const countryObj = countries.filter((obj) => obj.id === id);
-      console.log(countryObj);
       // Non camelCase are needed here since they're used by the Narrativa API.
       /* eslint-disable camelcase */
       const regionsData = countryObj[0].regions.map(({
@@ -39,25 +32,29 @@ const Regiones = () => {
     } else {
       setRegions(null);
     }
-    setLoading(false);
-  }, [id]);
+  }, [id, loaded]);
 
-  if (loading) {
-    return <Loading />;
-  }
   if (!regions) {
-    return <h2 className="section-title">No Data available to display</h2>;
+    return (
+      <>
+        <h2 className="section-title">Wait Data to load</h2>
+        <Loading />
+      </>
+    );
   }
   const regionsMoreAffected = regions.sort((a, b) => b.todayNewConfirmed - a.todayNewConfirmed);
-  const countriesList = regionsMoreAffected.map((country) => {
+  const total = regions.reduce((acc, curr) => acc + curr.todayNewConfirmed, 0);
+
+  const regionsList = regionsMoreAffected.map((region) => {
     const {
       id, name, todayNewConfirmed, todayNewDeaths,
-    } = country;
+    } = region;
 
     return (
       <Region
         key={id}
-        id={countries.indexOf(country)}
+        item={regions.indexOf(region)}
+        id={id}
         name={name}
         todayNewDeaths={todayNewDeaths}
         todayNewConfirmed={todayNewConfirmed}
@@ -66,14 +63,14 @@ const Regiones = () => {
   });
 
   return (
-    <>
+    <div>
       {' '}
-      <Header total={10} title={id} carteName={id} />
+      <Header total={total} title={id.toUpperCase()} carteName={id} />
       <h3 className="middle-title">{`REGIONS BREAKDOWN - ${regions[0].date}`}</h3>
-      <div className="countries-container">
-        {countriesList}
+      <div className="regions-container">
+        {regionsList}
       </div>
-    </>
+    </div>
   );
 };
 

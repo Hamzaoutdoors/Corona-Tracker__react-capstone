@@ -21,6 +21,6 @@ export default Header;
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
-  total: PropTypes.number.isRequired,
+  total: PropTypes.string.isRequired,
   carteName: PropTypes.string.isRequired,
 };

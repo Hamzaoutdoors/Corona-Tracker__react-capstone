@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,9 +13,24 @@ const Region = ({
   const numberFormat = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
   return (
-    <div className={`region-wrapper d-flex ${item % 2 === 0 ? 'bgPrimary' : 'bgSecondary'}`}>
+    <motion.div
+      className={`region-wrapper d-flex ${item % 2 === 0 ? 'bgPrimary' : 'bgSecondary'}`}
+      initial={{
+        opacity: 0,
+        translateY: 50,
+      }}
+      animate={{
+        opacity: 1.2,
+        translateY: 0,
+      }}
+      transition={{
+        duration: 0.3,
+        delay: item * 0.25,
+      }}
+      data-testid="div-test"
+    >
       <div className="region-name">
-        <h2 className="p-0">{name}</h2>
+        <h2 className="p-0" data-testid={name}>{name}</h2>
       </div>
       <div className="d-flex align-items-center text-align-center">
         <div className="region-body d-flex flex-column align-items-center">
@@ -23,7 +39,7 @@ const Region = ({
         </div>
         <FontAwesomeIcon icon={faArrowCircleRight} className="region-icon" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

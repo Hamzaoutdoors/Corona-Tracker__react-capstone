@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page tests Countries page matches snapshot 1`] = `
+<div>
+   
+  <div
+    className="page-header"
+  >
+    <div
+      className="header-image"
+    >
+      <img
+        alt="cart"
+        src="/cartes/europe.svg"
+      />
+    </div>
+    <div
+      className="header-body"
+    >
+      <h2>
+        EUROPE
+      </h2>
+      <p>
+        5030 Cases
+      </p>
+    </div>
+  </div>
+  <h3
+    className="middle-title"
+  >
+    Today New Confirmed by Country
+  </h3>
+  <div
+    className="w-50 m-2 dropend btn-group"
+    role="group"
+  >
+    <button
+      aria-expanded={false}
+      className="dropdown-toggle btn btn-warning"
+      disabled={false}
+      id="dropdown-button-drop-end"
+      onClick={[Function]}
+      type="button"
+    >
+      Filter By Country
+    </button>
+  </div>
+  <div
+    className="countries-container container"
+  >
+    <a
+      className="div"
+      data-testid="button-france"
+      href="/country/france"
+      onClick={[Function]}
+    >
+      <div
+        className="div-0 d-flex flex-column"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateX(-50px) translateY(-50px) translateZ(0)",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-arrow-circle-right fa-w-16 arrow-icon"
+          data-icon="arrow-circle-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <div
+          className="country-image"
+        >
+          <img
+            alt="country-img"
+            src="./cartes/france.svg"
+          />
+        </div>
+        <div
+          className="country-body"
+        >
+          <h2
+            className="p-0"
+            data-testid="country-test"
+          >
+            France
+          </h2>
+          <p
+            className="p-0"
+            data-content="3,991 Cases"
+          >
+            3,991 Cases
+          </p>
+        </div>
+      </div>
+    </a>
+    <a
+      className="div"
+      data-testid="button-italy"
+      href="/country/italy"
+      onClick={[Function]}
+    >
+      <div
+        className="div-1 d-flex flex-column"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateX(50px) translateY(-50px) translateZ(0)",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-arrow-circle-right fa-w-16 arrow-icon"
+          data-icon="arrow-circle-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <div
+          className="country-image"
+        >
+          <img
+            alt="country-img"
+            src="./cartes/italy.svg"
+          />
+        </div>
+        <div
+          className="country-body"
+        >
+          <h2
+            className="p-0"
+            data-testid="country-test"
+          >
+            Italy
+          </h2>
+          <p
+            className="p-0"
+            data-content="1,000 Cases"
+          >
+            1,000 Cases
+          </p>
+        </div>
+      </div>
+    </a>
+    <a
+      className="div"
+      data-testid="button-germany"
+      href="/country/germany"
+      onClick={[Function]}
+    >
+      <div
+        className="div-2 d-flex flex-column"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateX(-50px) translateY(-50px) translateZ(0)",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-arrow-circle-right fa-w-16 arrow-icon"
+          data-icon="arrow-circle-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <div
+          className="country-image"
+        >
+          <img
+            alt="country-img"
+            src="./cartes/germany.svg"
+          />
+        </div>
+        <div
+          className="country-body"
+        >
+          <h2
+            className="p-0"
+            data-testid="country-test"
+          >
+            Germany
+          </h2>
+          <p
+            className="p-0"
+            data-content="39 Cases"
+          >
+            39 Cases
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Home page tests dropdown displayed properly  1`] = `
+<div
+  className="w-50 m-2 dropend btn-group"
+  role="group"
+>
+  <button
+    aria-expanded={false}
+    className="dropdown-toggle btn btn-warning"
+    disabled={false}
+    id="dropdown-button-drop-end"
+    onClick={[Function]}
+    type="button"
+  >
+    Filter By Country
+  </button>
+</div>
+`;

@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { shallowEqual, useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import Country from './Country';
 import Header from '../Header';
 import Loading from '../Loading';
+import DropdownFilter from '../DropdownFilter';
 
 // import Loading from './Loading';
 
@@ -12,21 +14,28 @@ const Countries = () => {
   const total = countries.reduce((acc, curr) => acc + curr.todayNewConfirmed, 0);
 
   const countriesMoreAffected = countries.sort((a, b) => b.todayNewConfirmed - a.todayNewConfirmed);
+
   const countriesList = countriesMoreAffected.map((country) => {
     const {
       id, name, regions, todayNewConfirmed, todayConfirmed,
     } = country;
 
     return (
-      <Country
+      <Link
         key={id}
-        id={countries.indexOf(country)}
-        carteName={id}
-        name={name}
-        regions={regions}
-        todayConfirmed={todayConfirmed}
-        todayNewConfirmed={todayNewConfirmed}
-      />
+        to={`/country/${id}`}
+        className="div"
+        data-testid={`button-${id}`}
+      >
+        <Country
+          id={countries.indexOf(country)}
+          carteName={id}
+          name={name}
+          regions={regions}
+          todayConfirmed={todayConfirmed}
+          todayNewConfirmed={todayNewConfirmed}
+        />
+      </Link>
     );
   });
 
@@ -35,7 +44,7 @@ const Countries = () => {
       {' '}
       <Header total={`${total} Cases`} title="EUROPE" carteName="europe" />
       <h3 className="middle-title">Today New Confirmed by Country</h3>
-      {countries.length === 0 ? <Loading /> : null}
+      {countries.length === 0 ? <Loading /> : <DropdownFilter />}
       <Container className="countries-container">
         {countriesList}
       </Container>

@@ -148,15 +148,16 @@ img {
   cursor: pointer;
 }
 
-.div:hover {
-  background-color: var(--hover-color);
-}
-
-.countries-container > .div {
+.countries-container .div {
   flex: 50%;
   max-width: 50%;
   color: white;
   text-decoration: none;
+  margin: 0 auto;
+}
+
+.countries-container .div:hover {
+  background-color: var(--hover-color);
 }
 
 .countries-container .div .country-image {

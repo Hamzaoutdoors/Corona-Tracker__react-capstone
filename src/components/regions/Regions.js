@@ -20,8 +20,9 @@ const Regiones = () => {
       // Non camelCase are needed here since they're used by the Narrativa API.
       /* eslint-disable camelcase */
       const regionsData = countryObj[0].regions.map(({
-        id, name, today_new_confirmed, today_new_deaths,
+        id, name, today_new_confirmed, today_new_deaths, date,
       }) => ({
+        date,
         id,
         name,
         todayNewConfirmed: today_new_confirmed || 0,

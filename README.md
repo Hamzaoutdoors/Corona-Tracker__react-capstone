@@ -68,6 +68,12 @@ Live demos for this project can be found on the following Cloud Platforms :
 <div align="center">
     <a href="https://ho-coronatracker21.netlify.app/" width = "20%"><img alt="Netlify deployement" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></a>
  </div> 
+</br>
+
+## Video Presentation
+
+[![Video](./src\assets\video.png)](https://www.loom.com/share/b19c680b99474152a39a4b872f602901)
+
 
 # Getting Started with Create React App
 

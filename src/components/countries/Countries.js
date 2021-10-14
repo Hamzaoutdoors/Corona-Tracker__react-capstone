@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 import Country from './Country';
 import Header from '../Header';
 import Loading from '../Loading';
+import DropdownFilter from '../DropdownFilter';
 
 // import Loading from './Loading';
 
@@ -24,6 +25,7 @@ const Countries = () => {
         key={id}
         to={`/country/${id}`}
         className="div"
+        data-testid={`button-${id}`}
       >
         <Country
           id={countries.indexOf(country)}
@@ -42,7 +44,7 @@ const Countries = () => {
       {' '}
       <Header total={`${total} Cases`} title="EUROPE" carteName="europe" />
       <h3 className="middle-title">Today New Confirmed by Country</h3>
-      {countries.length === 0 ? <Loading /> : null}
+      {countries.length === 0 ? <Loading /> : <DropdownFilter />}
       <Container className="countries-container">
         {countriesList}
       </Container>

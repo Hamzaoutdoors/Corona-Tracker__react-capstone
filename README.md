@@ -26,7 +26,7 @@
 
 # Corona Tracker
 
-- A SPA web application for a to check a list of metrics (COVID-19 numeric data) using of React and Redux.
+- A SPA web application for checking and tracking COVID 19 around the world using React and Redux.
 The webapp will have several pages :
 
   - One page with a list of metrics that can be filtered by the country. This page is designed to be the homepage.

@@ -27,10 +27,10 @@ const Region = ({
         duration: 0.3,
         delay: item * 0.25,
       }}
-
+      data-testid="div-test"
     >
       <div className="region-name">
-        <h2 className="p-0">{name}</h2>
+        <h2 className="p-0" data-testid={name}>{name}</h2>
       </div>
       <div className="d-flex align-items-center text-align-center">
         <div className="region-body d-flex flex-column align-items-center">

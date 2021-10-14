@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries page renders properly 1`] = `
+<div>
+  <div
+    className="nav-icons"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-microphone fa-w-11 mx-1"
+      data-icon="microphone"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 352 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-cog fa-w-16 mx-0"
+      data-icon="cog"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <a
+    className="arrow"
+    href="/about"
+    onClick={[Function]}
+  >
+     
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-angle-double-left fa-w-14 mx-1"
+      data-icon="angle-double-left"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    About
+  </a>
+  <div
+    className="page-title"
+  >
+    <p
+      data-content="Countries where COVID-19 has spread"
+    >
+      Countries where COVID-19 has spread
+    </p>
+  </div>
+  <div>
+     
+    <div
+      className="page-header"
+    >
+      <div
+        className="header-image"
+      >
+        <img
+          alt="cart"
+          src="/cartes/europe.svg"
+        />
+      </div>
+      <div
+        className="header-body"
+      >
+        <h2>
+          EUROPE
+        </h2>
+        <p>
+          0 Cases
+        </p>
+      </div>
+    </div>
+    <h3
+      className="middle-title"
+    >
+      Today New Confirmed by Country
+    </h3>
+    <div
+      className="loader-container"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+    <div
+      className="countries-container container"
+    />
+  </div>
+</div>
+`;

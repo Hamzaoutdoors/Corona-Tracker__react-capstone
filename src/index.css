@@ -153,6 +153,7 @@ img {
   max-width: 50%;
   color: white;
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .countries-container .div:hover {

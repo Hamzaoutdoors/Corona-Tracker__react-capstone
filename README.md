@@ -72,7 +72,7 @@ Live demos for this project can be found on the following Cloud Platforms :
 
 ## Video Presentation
 
-[![Video](./src\assets\video.png)](https://www.loom.com/share/b19c680b99474152a39a4b872f602901)
+[![Video](https://user-images.githubusercontent.com/80895497/137382626-bbc204be-cdc3-433f-9bd2-77538df46531.png)](https://www.loom.com/share/b19c680b99474152a39a4b872f602901)
 
 
 # Getting Started with Create React App

@@ -46,13 +46,13 @@ Because COVID-19 virus affects all of us. Today it's someone else who is getting
 
 </br>
 
-<!--  <div align="center">
+ <div align="center">
 <kbd>
-  <img alt="math" src="./src\media\screenShot.PNG">
+  <img alt="math" src="./src\assets\covid-screen.png">
   </kbd>
   </div>
  </br>
- -->
+ 
 ## Built With
 
 - JSX, JavaScript with ES6
@@ -62,13 +62,18 @@ Because COVID-19 virus affects all of us. Today it's someone else who is getting
 
 ## Live demo
 
-### In construction
-<!-- Live demos for this project can be found on the following Cloud Platforms :
+Live demos for this project can be found on the following Cloud Platforms :
 
 
 <div align="center">
-    <a href="https://bookstore-hamzaoutdoors.netlify.app/" width = "20%"><img alt="Netlify deployement" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></a>
- </div> -->
+    <a href="https://ho-coronatracker21.netlify.app/" width = "20%"><img alt="Netlify deployement" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></a>
+ </div> 
+</br>
+
+## Video Presentation
+
+[![Video](https://user-images.githubusercontent.com/80895497/137382626-bbc204be-cdc3-433f-9bd2-77538df46531.png)](https://www.loom.com/share/b19c680b99474152a39a4b872f602901)
+
 
 # Getting Started with Create React App
 

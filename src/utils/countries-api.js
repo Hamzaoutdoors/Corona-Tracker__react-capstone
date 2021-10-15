@@ -10,7 +10,7 @@ const yesterday = new Date();
 yesterday.setDate(today.getDate() - 1);
 const yesterDate = transferDate(yesterday);
 
-const europecountries = ['spain', 'germany', 'italy', 'france', 'denmark', 'portugal', 'netherlands', 'switzerland', 'united_kingdom'];
+const europecountries = ['spain', 'germany', 'italy', 'france', 'denmark', 'belgium', 'portugal', 'netherlands', 'switzerland', 'united_kingdom'];
 
 const config = {
   method: 'get',

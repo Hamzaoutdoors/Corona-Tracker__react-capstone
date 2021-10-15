@@ -11,7 +11,7 @@ const Country = ({
 
   return (
     <motion.div
-      className={`div-${id} d-flex flex-column`}
+      className={`div-${id} insider-div d-flex flex-column`}
       initial={{
         opacity: 0,
         translateX: id % 2 === 0 ? -50 : 50,

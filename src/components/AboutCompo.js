@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Badge, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Header from './Header';
 
 const AboutComponent = () => (
@@ -39,10 +40,6 @@ const AboutComponent = () => (
             <a href="https://www.santepubliquefrance.fr/dossiers/coronavirus-covid-19">Santé publique France</a>
           </li>
         </ul>
-        <p className="text-monospace warning">
-          All Copyright &copy; and Thanks For
-          <a href="https://covid19tracking.narrativa.com/index_en.html" className="text-decoration-none"> Narrativa API</a>
-        </p>
       </div>
       <div>
         <h1 className="my-4 shadow">About Constructer</h1>
@@ -57,22 +54,31 @@ const AboutComponent = () => (
           You can follow me on :
 
         </p>
-        <ul className="d-flex justify-content-between ">
-          <li className="badge badge-pill badge-primary ">
-            <a href="https://github.com/Hamzaoutdoors" target="_blank" rel="noreferrer" className="text-decoration-none text-dark">Github</a>
+        <ul className="d-flex justify-content-between p-0">
+          <li>
+            <Badge bg="warning">
+              <FontAwesomeIcon icon={faGithub} className="mx-1 text-dark" />
+              <a href="https://github.com/Hamzaoutdoors" target="_blank" rel="noreferrer" className="text-decoration-none text-dark">Github</a>
+            </Badge>
           </li>
-          <li className="badge badge-pill badge-primary">
-            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noreferrer" className="text-decoration-none text-dark">Facebook</a>
+          <li>
+            <Badge bg="warning">
+              <FontAwesomeIcon icon={faFacebook} className="mx-1 text-primary" />
+              <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noreferrer" className="text-decoration-none text-dark">Facebook</a>
+            </Badge>
           </li>
-          <li className="badge badge-pill badge-primary">
-            <a href="https://www.linkedin.com/in/hamzaellaouzi/?locale=en_US" target="_blank" rel="noreferrer" className="text-decoration-none text-dark">LinkedIn</a>
+          <li>
+            <Badge bg="warning">
+              <FontAwesomeIcon icon={faLinkedin} className="mx-1 text-info" />
+              <a href="https://www.linkedin.com/in/hamzaellaouzi/?locale=en_US" target="_blank" rel="noreferrer" className="text-decoration-none text-dark">LinkedIn</a>
+            </Badge>
           </li>
         </ul>
-        <p className="text-monospace warning">
-          All Copyright &copy; For
-          <a href="https://covid19tracking.narrativa.com/index_en.html" className="text-decoration-none"> Narrativa API</a>
-        </p>
       </div>
+      <p className="text-monospace warning">
+        All Copyright &copy; and Thanks For
+        <a href="https://covid19tracking.narrativa.com/index_en.html" className="text-decoration-none"> Narrativa API</a>
+      </p>
     </Container>
   </div>
 );

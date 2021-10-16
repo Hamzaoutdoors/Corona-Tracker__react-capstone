@@ -46,11 +46,11 @@ Because COVID-19 virus affects all of us. Today it's someone else who is getting
 
 </br>
 
- <div align="center">
-<kbd>
-  <img alt="math" src="./src\assets\covid-screen.png">
-  </kbd>
-  </div>
+
+About Page            |  Home Page          |  Detail Page
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/80895497/137564073-7b49d974-f0d3-4857-a2e7-2a8e0015e239.png)   |  ![](https://user-images.githubusercontent.com/80895497/137564198-df23a183-da88-46bd-a7da-5efe01e2f485.png) |  ![](https://user-images.githubusercontent.com/80895497/137564079-02565057-4a0a-44f3-bcc0-b5c8cbfe4593.png)
+
  </br>
  
 ## Built With

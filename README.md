@@ -26,12 +26,12 @@
 
 # Corona Tracker
 
-- A SPA web application for checking and tracking COVID 19 around the world using React and Redux.
+- A SPA web application for checking and tracking daily information about COVID 19 in Europe using React and Redux.
 The webapp will have several pages :
 
-  - One page with a list of metrics that can be filtered by the country. This page is designed to be the homepage.
-  - One page for the detail page for Czech Republic cities with number of infected.
-- For this project we interacted with [Narrativa API](https://covid19tracking.narrativa.com/index_en.html)
+  - Home page with a list of europe countries that can be filtered by the country.
+  - Detail page for more detail about the country by clicking on it with number of infected and deaths.
+- For this project I interacted with [Narrativa API](https://covid19tracking.narrativa.com/index_en.html)
 
 ## More about the project :
 
@@ -46,11 +46,11 @@ Because COVID-19 virus affects all of us. Today it's someone else who is getting
 
 </br>
 
- <div align="center">
-<kbd>
-  <img alt="math" src="./src\assets\covid-screen.png">
-  </kbd>
-  </div>
+
+About Page            |  Home Page          |  Detail Page
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/80895497/137564073-7b49d974-f0d3-4857-a2e7-2a8e0015e239.png)   |  ![](https://user-images.githubusercontent.com/80895497/137564198-df23a183-da88-46bd-a7da-5efe01e2f485.png) |  ![](https://user-images.githubusercontent.com/80895497/137564079-02565057-4a0a-44f3-bcc0-b5c8cbfe4593.png)
+
  </br>
  
 ## Built With
@@ -137,12 +137,12 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used 🔰
+- Hat tip to [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29) on Behance 🔰
 - Inspiration 💘
 - Microverse program ⚡
-- Our standup team 🏹
-- Our family's support 🙌
-- 📝 License
+- My standup team 😍
+- My family's support 🙌
+- MicroBros 😜
 
 ## 📝 License
 

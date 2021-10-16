@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { shallowEqual, useSelector } from 'react-redux';
-import { Container } from 'react-bootstrap';
 import Country from './Country';
 import Header from '../Header';
 import Loading from '../Loading';
@@ -12,7 +11,6 @@ import DropdownFilter from '../DropdownFilter';
 const Countries = () => {
   const { countries } = useSelector((state) => state.countries, shallowEqual);
   const total = countries.reduce((acc, curr) => acc + curr.todayNewConfirmed, 0);
-
   const countriesMoreAffected = countries.sort((a, b) => b.todayNewConfirmed - a.todayNewConfirmed);
 
   const countriesList = countriesMoreAffected.map((country) => {
@@ -45,9 +43,9 @@ const Countries = () => {
       <Header total={`${total} Cases`} title="EUROPE" carteName="europe" />
       <h3 className="middle-title">Today New Confirmed by Country</h3>
       {countries.length === 0 ? <Loading /> : <DropdownFilter />}
-      <Container className="countries-container">
+      <div className="countries-container">
         {countriesList}
-      </Container>
+      </div>
     </div>
   );
 };

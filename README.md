@@ -49,7 +49,7 @@ Because COVID-19 virus affects all of us. Today it's someone else who is getting
 
 About Page            |  Home Page          |  Detail Page
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/80895497/137564073-7b49d974-f0d3-4857-a2e7-2a8e0015e239.png)   |  ![](https://user-images.githubusercontent.com/80895497/137564198-df23a183-da88-46bd-a7da-5efe01e2f485.png) |  ![](https://user-images.githubusercontent.com/80895497/137564079-02565057-4a0a-44f3-bcc0-b5c8cbfe4593.png)
+![](https://user-images.githubusercontent.com/80895497/137564073-7b49d974-f0d3-4857-a2e7-2a8e0015e239.png)   |  ![](https://user-images.githubusercontent.com/80895497/137564198-df23a183-da88-46bd-a7da-5efe01e2f485.png) |  ![](https://user-images.githubusercontent.com/80895497/137647631-2bf967db-4e7c-4349-93ca-59de1714db3c.png)
 
  </br>
  
@@ -69,11 +69,6 @@ Live demos for this project can be found on the following Cloud Platforms :
     <a href="https://ho-coronatracker21.netlify.app/" width = "20%"><img alt="Netlify deployement" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></a>
  </div> 
 </br>
-
-## Video Presentation
-
-[![Video](https://user-images.githubusercontent.com/80895497/137382626-bbc204be-cdc3-433f-9bd2-77538df46531.png)](https://www.loom.com/share/b19c680b99474152a39a4b872f602901)
-
 
 # Getting Started with Create React App
 

@@ -53,6 +53,11 @@ ul {
   list-style: none;
 }
 
+.page-item.active .page-link {
+  background-color: var(--hover-color) !important;
+  border: 2px solid var(--dark-color) !important;
+}
+
 /* Main Page */
 
 .page-header {

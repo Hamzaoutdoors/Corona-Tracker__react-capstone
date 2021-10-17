@@ -42,7 +42,7 @@ const AboutComponent = () => (
         </ul>
       </div>
       <div>
-        <h1 className="my-4 shadow">About Constructer</h1>
+        <h1 className="my-4 shadow">About Developer</h1>
         <p>
           Hamza Ellaouzi Full-Stack Developer,
           Geoinformatics Engineer and Lifelong Learner. Based in Tangier, Morocco

@@ -26,8 +26,8 @@
 
 # Corona Tracker
 
-- A SPA web application for checking and tracking daily information about COVID 19 in Europe using React and Redux.
-The webapp will have several pages :
+- A SPA web application for checking and tracking daily information about COVID 19 in the big European Countries using React & Redux.
+The webapp have several pages :
 
   - Home page with a list of europe countries that can be filtered by the country.
   - Detail page for more detail about the country by clicking on it with number of infected and deaths.

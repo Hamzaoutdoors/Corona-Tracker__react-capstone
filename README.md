@@ -29,7 +29,7 @@
 - A SPA web application for checking and tracking daily information about COVID 19 in the big European Countries using React & Redux.
 The webapp have several pages :
 
-  - Home page with a list of europe countries that can be filtered by the country.
+  - Home page with a list of european countries that can be filtered by the country.
   - Detail page for more detail about the country by clicking on it with number of infected and deaths.
 - For this project I interacted with [Narrativa API](https://covid19tracking.narrativa.com/index_en.html)
 
